@@ -15,7 +15,10 @@ export default async function SignIn() {
   return (
     <>
       {Object.values(providers).map((provider: any) => (
-        <div key={provider.name}>
+        <div
+          key={provider.name}
+          className="flex w-screen h-screen justify-center iems-center"
+        >
           <SignInBtn provider={provider} />
         </div>
       ))}
